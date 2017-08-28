@@ -1,0 +1,52 @@
+---
+layout: default
+---
+{{content}}
+
+<section class="bulletpic">
+  <svg viewBox="0 0 100 100" fill="#808080">
+    <polygon points="0,0 50,48 100,0 52,50 100,100 50,52 0,100 48,50"/>
+  </svg>
+  <div class="grid bullets ">
+      <div class="col-6 mistakes switch">
+        <h3 class="disapear">Mistakes</h3>
+          <ul class="hidden">
+            {% for bullets in page.mistakesbullets %}
+            <li>{{bullets.name}}</li>
+            {% endfor %}
+          </ul>
+      </div>
+    <div class="col-6 tips switch">
+      <h3 class="disapear">Tips</h3>
+      <ul class="hidden">
+        {% for bullets in page.tipsbullets %}
+        <li>{{bullets.name}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col-6 where switch">
+      <h3 class="disapear">Where to go</h3>
+      <ul class="hidden">
+        {% for bullets in page.wherebullets %}
+        <li>{{bullets.name}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col-6 bring switch">
+      <h3 class="disapear">What to bring</h3>
+      <ul class="hidden">
+        {% for bullets in page.bringbullets %}
+        <li>{{bullets.name}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+<section>
+  <p>
+    <!-- LightWidget WIDGET -->
+  <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/390d552c738e51ea8033ce03bb7f17bf.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
+
+  </p>
+</section>

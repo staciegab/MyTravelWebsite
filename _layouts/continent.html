@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<!-------------------what am I missing here?---------------------------------->
+  {% for continent in page.continent %}
+  <section>
+    <h2 class="col-12">{{continent.country-name}}</h2>
+  </section>
+{% endfor %}
+
+    {{content}}
+
+
+  <section id="country">
+      <div class="grid">
+        {% for country in page.country %}
+        <div class="col-4 ">
+          <a href="{{country.url}}">
+            <div class="country {{country.class}}">
+              <h3>
+                {{country.name}}
+              </h3>
+            </div>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+  </section>
